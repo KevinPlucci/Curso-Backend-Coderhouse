@@ -1,0 +1,30 @@
+<h2>Productos</h2>
+
+{{#if products.length}}
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+                <tr>
+                    <td>{{id}}  </td>
+                    <td>{{title}}</td>
+                    <td>{{price}}</td>
+                    <td><img src="{{thumbnail}}" width="100px"></td>
+                </tr>
+
+            {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+    <div class='message'><h2>No hay ningun producto</h2></div>
+    {{/if}}
+        <button><a href="/">Agregar producto</a></button>
+
+
