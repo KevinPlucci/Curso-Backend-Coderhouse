@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+      "express": "^4.17.3",
+      "express-handlebars": "^5.2.0",
+      "knex": "^1.0.7",
+      "mysql": "^2.18.1",
+      "nodemon": "^2.0.15",
+      "socket.io": "^4.4.1",
+      "sqlite3": "^5.0.3"
+    },
+    "name": "entrega6",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+  }
