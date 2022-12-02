@@ -1,0 +1,23 @@
+{{> navbar}}
+
+<div class="container-fluid">
+    <div class="row mt-4 justify-content-center">
+        <div class="col-6 form-container">
+            <h2 class="text-center mb-4">Login de usuario 🙋</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo:</label>
+                    <input id="email" type="email" class="form-control mb-3" name="email" placeholder="example@example.com" required>
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input id="password" type="password" class="form-control" name="password" required>
+                </div>
+                <input class="btn mx-auto d-block form-btn" type="submit" value="Login"/>
+            </form>
+            <span>
+                <a href="/register" class="btn mx-auto btn-primary mt-5">Registrarse</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script src="/login.js"></script>
