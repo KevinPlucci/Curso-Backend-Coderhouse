@@ -1,0 +1,2 @@
+
+[WARN] | 24-10-2022 18:22 | pid: 13392: Mongo model container: error in getting cart by id: TypeError: Cannot read properties of null (reading '_doc')
