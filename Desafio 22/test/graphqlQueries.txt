@@ -1,0 +1,88 @@
+mutation addCarrito {
+  createCarrito {
+    id
+  }
+}
+
+mutation deleteCarrito {
+  deleteCarrito(id: "1d1de56fe25f74aaf781") {
+    id
+  }
+}
+
+mutation addProductoInCar {
+  	addProductoInCar(id: "carrito_1", producto: {id: "2"}) {
+    id
+    timestamp
+    productos {
+      id
+    }
+  }
+}
+
+mutation deleteProductoInCar {
+  	deleteProductoInCar(id: "carrito_1", producto: {id: "b"}) {
+    id
+  }
+}
+
+query getProductosInCar {
+  getProductosInCar(id: "carrito_1") {
+    id
+  }
+}
+
+query getCarrito {
+  getCarrito(id: "carrito_1") {
+    id
+    timestamp
+    productos {
+      id
+    }
+  }
+}
+
+query getCarritos {
+  getCarritos {
+    id
+    timestamp
+    productos {
+      id
+    }
+  }
+}
+
+
+###PRODUCTOS FUNCTIONS
+query getProductos{
+  getProductos{
+    id, timestamp, nombre, precio, stock, descripcion, codigo
+  }
+}
+
+query getProducto {
+  getProducto(id: "1"){
+ 		id, nombre, stock, precio
+  }
+}
+
+mutation addProducto{
+  createProducto(data: {
+    nombre: "gato", stock:10, descripcion:"Null", precio: 0.2, codigo: "WDEWQ"
+  }
+  ){
+    id, timestamp, nombre, stock, precio
+  }
+}
+
+mutation deleteProducto{
+  deleteProducto(id: "1"){
+    id, nombre, stock 
+  }
+}
+
+mutation updateProducto{
+  updateProducto(id: "1", data:{stock:10}){
+    id, nombre, stock
+  }
+}
